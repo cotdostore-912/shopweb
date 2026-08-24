@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5fff8, #dff8ec);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    background: #ffffff;
+    display: block;
+  }
+
+  .container {
+    width: 100vw;
+    display: block;
+  }
+
+  .price-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
